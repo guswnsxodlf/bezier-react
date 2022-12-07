@@ -1,5 +1,31 @@
 # @channel.io/bezier-react
 
+## 1.0.0-next-v1.177
+
+### Minor Changes
+
+- [#1036](https://github.com/channel-io/bezier-react/pull/1036) [`e23c54a8`](https://github.com/channel-io/bezier-react/commit/e23c54a81fa6647e378985d660a95fcfedbd253a) Thanks [@sungik-choi](https://github.com/sungik-choi)! - Re-implement `Modal` component
+
+  BREAKING_CHANGES
+
+  - No longer use `BaseModal` for internal implementations of `Modal`.
+  - The existing `Modal` is renamed `LegacyModal` and will be removed from subsequent PR.
+  - The `ModalAction` component is renamed `ModalFooter`.
+  - The `targetElement` property in `ModalProps` is renamed `container`.
+  - The `showCloseIcon` property is moved from `ModalProps` to `ModalContentProps`.
+  - The `title`, `subTitle`, `description`, and `titleSize` properties are moved from `ModalContentProps` to the new `ModalHeaderProps`.
+
+* [#1002](https://github.com/channel-io/bezier-react/pull/1002) [`cb677dde`](https://github.com/channel-io/bezier-react/commit/cb677dde40d92582f8fade504b54ee8532d3ae0f) Thanks [@Dogdriip](https://github.com/Dogdriip)! - Apply `@radix-ui/react-switch` primitives to `Switch` component
+
+  BREAKING CHANGE:
+
+  - `onClick` handler is now `React.MouseEventHandler<HTMLButtonElement>`.
+  - `Switch` component is now `HTMLButtonElement`.
+
+### Patch Changes
+
+- [#1063](https://github.com/channel-io/bezier-react/pull/1063) [`d924b727`](https://github.com/channel-io/bezier-react/commit/d924b727492e1a7fbb75b67b6f933b4e08a63adf) Thanks [@sungik-choi](https://github.com/sungik-choi)! - Change the `Status` component to use CSS Variable internally
+
 ## 1.0.0-next-v1.176
 
 ### Minor Changes
